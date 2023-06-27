@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --menu--*/
+.logo1 {
+    background-color: #666666ff;
+    display: flex;
+    justify-content: center;
+}
+
+.vertical-menu {
+    text-align: center; /*centralizar textos dos links*/
+}
+
+.vertical-menu a {
+    background-color: #eee; /* Cor de fundo do menu */
+    color: black; /* cor do texto */
+    display: block; /* Fazer cada link ficar um em baixo do outro */
+    padding: 12px;
+    text-decoration: none; /* Remover linha de baixo dos links */
+}
+
+.vertical-menu a:hover {
+    background-color: #03AB6D; /* Cor quando o mouse passa por cima */
+}
+
+.vertical-menu a.active {
+    background-color: #026B45; /*cor do link da página atual */
+    color: white; /*cor do texto do link da página atual */
+}
+
+/* --Corpo do site--*/
+.quem_somos{
+    text-align: center;
+}
+.texto{
+    margin: 5px;
+}
+
+/* --fotos--*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.gallery-item {
+    width: 500px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*rodapé*/
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;
+  }
+  
+  #footer {
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    background-color: black;
+  }
